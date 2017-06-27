@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xdfdfdf43?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.MainWindowController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <BorderPane prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0">
+          <bottom>
+            <SplitPane dividerPositions="0.5" focusTraversable="true" prefHeight="160.0" prefWidth="200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="122.0" prefWidth="274.0">
+                  <children>
+                    <TextArea fx:id="inputarea" prefHeight="158.0" prefWidth="274.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                  <children>
+                    <TextArea fx:id="outputarea" prefHeight="158.0" prefWidth="274.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </bottom>
+          <left>
+            <TextArea fx:id="codearea" prefHeight="275.0" prefWidth="556.0" wrapText="true" />
+          </left>
+          <top>
+            <MenuBar blendMode="HARD_LIGHT" cache="true" cacheHint="QUALITY" depthTest="ENABLE">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onnewfile" text="New" />
+                    <MenuItem mnemonicParsing="false" onAction="#onopen" text="Open" />
+                    <MenuItem mnemonicParsing="false" onAction="#onsave" text="Save" />
+                    <MenuItem mnemonicParsing="false" onAction="#ondelete" text="Delet" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Version">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onhistory" text="History Version" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Execute">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onrun" text="Run" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="User">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onsignin" text="Register" />
+                    <MenuItem mnemonicParsing="false" onAction="#Login" text="Login" />
+                    <MenuItem mnemonicParsing="false" onAction="#onLogout" text="Logout" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Exit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onClose" text="Sure" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </top>
+        </BorderPane>
+      </center>
+      <left>
+        <Pane prefHeight="500.0" prefWidth="144.0">
+          <children>
+            <Text layoutX="28.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+              <font>
+                <Font name="Calibri" size="20.0" fx:id="x1" />
+              </font>
+            </Text>
+            <Text font="$x1" layoutX="37.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filetype:" />
+            <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="222.0" prefHeight="28.0" prefWidth="113.0" text="" textAlignment="CENTER">
+              <font>
+                <Font name="Calibri" size="18.0" fx:id="x2" />
+              </font>
+            </Label>
+            <Label fx:id="filetype" alignment="CENTER" font="$x2" layoutX="20.0" layoutY="335.0" prefHeight="28.0" prefWidth="113.0" text="" />
+            <ImageView fitHeight="143.41073608398438" fitWidth="161.69800011565272" layoutX="-18.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@dog.png" />
+              </image>
+            </ImageView>
+          </children>
+        </Pane>
+      </left>
+    </BorderPane>
+  </children>
+</AnchorPane>

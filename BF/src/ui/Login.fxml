@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-background-color 0xccfff9ff?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.LoginController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="" focusTraversable="true" orientation="VERTICAL" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <children>
+            <Pane fx:id="Login" prefHeight="298.0" prefWidth="398.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <ImageView fitHeight="68.99999237060547" fitWidth="77.79865139139054" layoutX="130.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@dog.png" />
+                  </image>
+                </ImageView>
+                <Label fx:id="Username" layoutX="26.0" layoutY="52.0" prefHeight="40.0" prefWidth="140.0" text="Username:" textFill="BLACK" textOverrun="ELLIPSIS">
+                  <font>
+                    <Font name="Calibri" size="30.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label fx:id="Password" font="$x1" layoutX="26.0" layoutY="137.0" prefHeight="40.0" prefWidth="140.0" text="Password:" textAlignment="CENTER" textFill="BLACK" />
+                <PasswordField fx:id="password" alignment="CENTER" layoutX="170.0" layoutY="132.0" prefHeight="50.0" prefWidth="200.0" />
+                <Button id="LogIn" layoutX="154.0" layoutY="244.0" minHeight="26.97265625" mnemonicParsing="false" onAction="#clickonLogin" prefHeight="30.0" prefWidth="92.0" text="Log In" textAlignment="CENTER" textOverrun="ELLIPSIS">
+                  <font>
+                    <Font name="Calibri Bold" size="18.0" fx:id="x2" />
+                  </font>
+                  <rotationAxis>
+                    <Point3D x="1.0" y="1.0" z="1.0" />
+                  </rotationAxis>
+                  <textFill>
+                    <Color blue="0.250" green="0.250" red="0.250" fx:id="x3" />
+                  </textFill>
+                </Button>
+                <TextField fx:id="username" alignment="CENTER" layoutX="170.0" layoutY="47.0" prefHeight="50.0" prefWidth="200.0" />
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

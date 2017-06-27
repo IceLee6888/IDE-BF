@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.HistoryVersionController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <AnchorPane prefHeight="280.0" prefWidth="400.0">
+      <children>
+        <Button id="open" layoutX="161.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickonOpen" text="Open">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Button>
+        <Label id="history" alignment="TOP_LEFT" layoutX="31.0" layoutY="41.0" prefHeight="31.0" prefWidth="334.0" text="History Version:">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

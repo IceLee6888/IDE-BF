@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.NewFileWindowController">
+  <children>
+    <Label layoutX="17.0" layoutY="55.0" text="Filename：">
+      <font>
+        <Font name="Cambria" size="18.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="17.0" layoutY="128.0" text="Filetype：" />
+    <Button fx:id="ok" layoutX="157.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickonOK" prefHeight="36.0" prefWidth="86.0" text="OK" />
+    <TextField fx:id="filename" layoutX="122.0" layoutY="48.0" prefHeight="36.0" prefWidth="251.0" />
+    <ChoiceBox layoutX="122.0" layoutY="121.0" mouseTransparent="false" prefHeight="36.0" prefWidth="251.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="                           .bf                       " />
+          <String fx:value="                           .Ook                      " />
+
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+  </children>
+</AnchorPane>

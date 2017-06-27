@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.RegisterWindowController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <Button layoutX="170.0" layoutY="217.0" mnemonicParsing="false" onAction="#clickonOK" prefHeight="30.0" prefWidth="88.0" text="OK">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Button>
+        <TextField fx:id="username" layoutX="158.0" layoutY="54.0" prefHeight="40.0" prefWidth="200.0" />
+        <TextField fx:id="password" layoutX="158.0" layoutY="125.0" prefHeight="40.0" prefWidth="200.0" />
+        <Text layoutX="29.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+          <font>
+            <Font size="20.0" fx:id="x1" />
+          </font>
+        </Text>
+        <Text font="$x1" layoutX="29.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+        <ImageView fitHeight="92.25" fitWidth="123.0" layoutX="324.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="file:/H:/workspace/BFOok-/BF-master/src/ui/dog.png" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.LoginSucceedController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <Button layoutX="126.0" layoutY="131.0" mnemonicParsing="false" onAction="#clickonOK" text="OK">
+          <font>
+            <Font size="15.0" />
+          </font>
+        </Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="57.0" text="Login Succeed！" textAlignment="CENTER">
+          <font>
+            <Font name="Cambria" size="30.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

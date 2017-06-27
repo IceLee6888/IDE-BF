@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="280.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.NoFileReminderController">
+  <!-- TODO Add Nodes -->
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="112.0" layoutY="79.0" prefHeight="61.0" prefWidth="190.0" text="No  File！">
+          <font>
+            <Font name="Cambria" size="40.0" />
+          </font>
+        </Label>
+        <Button layoutX="160.0" layoutY="193.0" mnemonicParsing="false" onAction="#clickonOK" prefHeight="30.0" prefWidth="80.0" text="OK">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Button>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

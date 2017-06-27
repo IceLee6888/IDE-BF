@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="250.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ui.SaveSucceedController">
+  <center>
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Button layoutX="157.0" layoutY="161.0" mnemonicParsing="false" onAction="#clickonOK" prefHeight="33.0" prefWidth="87.0" text="OK">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Button>
+        <Label layoutX="46.0" layoutY="62.0" prefHeight="33.0" prefWidth="308.0" text="File  saved successfully!" textFill="BLACK">
+          <font>
+            <Font name="Cambria Bold" size="28.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>
